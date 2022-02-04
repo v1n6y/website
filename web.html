@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Manure</title>
+    <link rel="stylesheet" href="STYLE.CSS">
+    <style>
+        *{
+            padding: 0; 
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .pic {
+            display: inline-block;
+        }
+        .bar{
+            background-color: rgb(9, 139, 190);
+            /* border-radius: 20px; */
+            border: 3px solid rgb(181, 233, 226);
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-around;  
+            align-items: center; */
+        }
+        img {
+            height: 675px;
+            width: 100%;
+        }
+        .bar li{
+            float: right;
+            list-style: none;
+            padding: 10px 20px;
+        }
+        .bar ul li::after{
+            content:'';
+            width: 0%;
+            height: 3px;
+            background:rgb(0, 1, 51);
+            margin: auto;
+            transition: 0.5s;
+            display: block;
+        }
+        .bar li:hover{
+            color:black;
+        }
+        .bar ul li:hover::after{
+            width: 100%;
+        }
+        .bar li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .bar ul{
+            display: inline-block;
+            overflow: auto;
+            float: right;
+            /* align-items: center; */
+        }
+        .logo img{
+            width:100px;
+            height: 100px;
+        }
+        .logo{
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box">
+        <a href="VISIT US TO KNOW MORE"></a>
+    </div> -->
+    <header>
+        <nav class="bar">
+            <div class="logo">
+                <img src="logo.jpeg" alt="">             
+            </div>
+            <ul>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="box">
+        <a href=""> VISIT US TO KNOW MORE </a>
+    </div>
+   
+    <div class="pic">
+        <img src="plant1.jpeg" alt="Cant load">
+    </div>
+</body>
+</html>
